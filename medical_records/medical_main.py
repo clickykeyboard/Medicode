@@ -22,8 +22,9 @@ def medical_main():
             print("----------------")
 
         else:
-
             if choice == 1:
                 print("Choice 1")
             elif choice == 2:
+                print("Going back...")
+                print("------------------------")
                 break

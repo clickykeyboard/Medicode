@@ -9,7 +9,6 @@ from medical_records.medical_main import medical_main
 while True:
 
     print("""
-    
     Welcome to Medicode!
     --------------------
     * Enter [1] for Medical Records Section
@@ -19,33 +18,47 @@ while True:
     * Enter [5] for Emergency Section
     * Enter [6] for First Aid Section
     * Enter [7] for Schedule Section
+    * Enter [8] to exit
     --------------------
     """)
 
     choice = int(input(">   "))
 
     if choice not in main_number_of_choices:
+        print("------------------------")
         print("Please enter a valid choice!")
+        print("------------------------")
 
     else:
         if choice == 1:
             print("Entering medical records..")
+            print("------------------------")
             medical_main()
 
         elif choice == 2:
             print("Entering health section..")
+            print("------------------------")
 
         elif choice == 3:
             print("Entering covid section..")
+            print("------------------------")
 
         elif choice == 4:
             print("Entering blood section..")
+            print("------------------------")
 
         elif choice == 5:
             print("Entering emergency section..")
+            print("------------------------")
 
         elif choice == 6:
             print("Entering first aid section..")
+            print("------------------------")
 
         elif choice == 7:
             print("Entering schedule section..")
+            print("------------------------")
+
+        elif choice == 8:
+            print("Exiting Medicode...")
+            exit()
