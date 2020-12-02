@@ -11,3 +11,5 @@
 - First Aid Tips
 - Schedule
 
+## We can use a local active_patient variable in config to access patient data in different files
+
