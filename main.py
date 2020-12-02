@@ -3,6 +3,7 @@ from config import main_number_of_choices
 
 # menu files
 from medical_records.medical_main import medical_main
+from health_status.health_status import health_main
 
 # Entry point
 
@@ -38,6 +39,7 @@ while True:
         elif choice == 2:
             print("Entering health section..")
             print("------------------------")
+            health_main()
 
         elif choice == 3:
             print("Entering covid section..")
