@@ -1,7 +1,8 @@
 from config import Configuration
 
+
 class Emergency:
-    def __init__(self,emergency_history, room_number):
+    def __init__(self, emergency_history, room_number):
         self.emergency_history = emergency_history
         self.room_number = room_number
 
@@ -37,7 +38,6 @@ def emergency_main():
         else:
             if choice == 1:
                 print("Choice 1")
-
 
             elif choice == 2:
                 print("Going back...")
