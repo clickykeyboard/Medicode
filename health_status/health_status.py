@@ -1,4 +1,5 @@
-from config import health_status_number_of_choices
+from config import Configuration
+
 
 def health_main():
     while True:
@@ -11,7 +12,7 @@ def health_main():
         """)
 
         choice = int(input(">   "))
-        if choice not in health_status_number_of_choices:
+        if choice not in Configuration.health_status_number_of_choices:
             print("----------------")
             print("Please enter a valid choice!")
             print("----------------")
@@ -19,7 +20,6 @@ def health_main():
         else:
             if choice == 1:
                 print("Choice 1")
-
 
             elif choice == 2:
                 print("Going back...")

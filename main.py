@@ -1,5 +1,5 @@
 # configuration settings
-from config import main_number_of_choices
+from config import Configuration
 
 # menu files
 from medical_records.medical_main import medical_main
@@ -25,7 +25,7 @@ while True:
 
     choice = int(input(">   "))
 
-    if choice not in main_number_of_choices:
+    if choice not in Configuration.main_number_of_choices:
         print("------------------------")
         print("Please enter a valid choice!")
         print("------------------------")

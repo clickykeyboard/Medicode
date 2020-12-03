@@ -1,4 +1,4 @@
-from config import medical_main_number_of_choices
+from config import Configuration
 
 
 def medical_main():
@@ -16,7 +16,7 @@ def medical_main():
 
         choice = int(input(">   "))
 
-        if choice not in medical_main_number_of_choices:
+        if choice not in Configuration.medical_main_number_of_choices:
             print("----------------")
             print("Please enter a valid choice!")
             print("----------------")
