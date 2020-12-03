@@ -5,7 +5,7 @@ from config import Configuration
 from medical_records.medical_main import medical_main
 from health_status.health_status import health_main
 from emergency.emergency import emergency_main
-
+from blood_status.blood_status import blood_status_main
 # Entry point
 
 while True:
@@ -49,6 +49,7 @@ while True:
         elif choice == 4:
             print("Entering blood section..")
             print("------------------------")
+            blood_status_main()
 
         elif choice == 5:
             print("Entering emergency section..")
