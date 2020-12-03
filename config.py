@@ -4,6 +4,7 @@ class Configuration:
     medical_main_number_of_choices = [1, 2]
     health_status_number_of_choices = [1, 2]
     emergency_status_number_of_choices = [1, 2]
+    blood_status_number_of_choices = [1, 2, 3]
 
     active_patient = {
 
