@@ -1,14 +1,70 @@
+import random
+
+
 class Configuration:
 
     main_number_of_choices = [1, 2, 3, 4, 5, 6, 7]
     patient_main_number_of_choices = [1, 2]
     medical_history_number_of_choices = [1, 2]
-    blood_section_number_of_choices = [1, 2,]
+    blood_section_number_of_choices = [1, 2, ]
     schedule_appointment_number_of_choices = [1, 2]
-    covid_19_number_of_choices = [1, 2,]
+    covid_19_number_of_choices = [1, 2, ]
     emergency_number_of_choices = [1, 2]
-
 
     active_patient = {
 
     }
+
+    def make_dummy_patient():
+
+        random_seven_digit = random.randint(1000000, 9999999)
+        age = random.randint(1, 90)
+        day = random.randint(1, 30)
+        month = random.randint(1, 12)
+        patient_pin = random.randint(0000, 9999)
+        patient_contact = f"0{random.randint(300, 355)}-{random_seven_digit}"
+
+        patient_gender = ["Male", "Female"]
+
+        patient_location = [
+            "Lahore", "Islamabad", "Karachi",
+            "Faisalabad", "Multan", "Gujranwala",
+            "Okara", "Quetta", "Peshawar"
+            "Khyber Pakhtunkhwa"]
+
+        patient_blood_groups = [
+            "O+", "O-",
+            "A+", "A-",
+            "B+", "B-",
+            "AB+", "AB-"
+        ]
+
+        patient_names = [
+            "Alif Bay", "Pay Tay",
+            "Say Ye", "Jeem Chay", "Hay Khay"
+            "Daal Daal", "Zuad Ray",
+            "Aray Zay", "Say Seen",
+            "Sheen Suad", "Duad Toye",
+            "Zoye Ain", "Gain Fay",
+            "Qaaf Kaaf", "Gaaf Laam",
+            "Meem Noon", "Wao Hay"
+        ]
+
+        patient_dummy_data = {
+            "patient_name": random.choice(patient_names),
+            "patient_age": age,
+            "patient_date_of_birth": f"{day}/{month}/{2020 - age}",
+            "patient_gender": patient_gender,
+            "patient_contact": "0333-4278321",
+            "patient_location": patient_contact,
+            "patient_cnic": f"35202-{random_seven_digit}-{random.randint(0, 9)}",
+            "patient_blood_group": random.choice(patient_blood_groups),
+            "records": [],
+            "appointments": []
+
+        }
+
+        return patient_dummy_data
+
+
+print(Configuration.make_dummy_patient())
