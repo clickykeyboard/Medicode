@@ -1,15 +1,15 @@
 from config import Configuration
 
 
-def medical_main():
+def patient_main():
 
     while True:
 
         print("""
     
-        Welcome to Medical Section
+        Welcome to Patient Section
         --------------------
-        * Enter [1] for Medical Records Section
+        * Enter [1] for Patient Information
         * Enter [2] to go back 
         --------------------
         """)
