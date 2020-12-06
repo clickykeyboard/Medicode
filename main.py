@@ -1,10 +1,10 @@
 # configuration settings
 from config import Configuration
-from blood_status.blood_status import blood_status_main
 from emergency.emergency import emergency_main
 # menu files
 from patient_records.patient_main import patient_main
 from medical_history.medical_history import medical_main
+from blood_status.blood_status import blood_section_main
 
 # Entry point
 
@@ -46,6 +46,7 @@ while True:
         elif choice == 3:
             print("Entering blood section..")
             print("------------------------")
+            blood_section_main()
 
         elif choice == 4:
             print("Entering schedule sction..")

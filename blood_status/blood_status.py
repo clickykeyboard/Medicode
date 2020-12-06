@@ -3,7 +3,7 @@ from config import Configuration
 
 class Blood_Status:
     def __init__(self, donating_blood, requesting_blood):
-        self.donating_blood = donating_blood
+        self.donation_blood = donating_blood
         self.requesting_blood = requesting_blood
 
     def get_donating_blood(self):
@@ -19,10 +19,10 @@ class Blood_Status:
         self.requesting_blood = new_requesting_blood
 
 
-def blood_status_main():
+def blood_section_main():
     while True:
         print(""" 
-        Welcome to the Emergency Status Menu
+        Welcome to the Blood Section Menu
         ----------------------
         * Enter [1] to check for Blood Acceptors
         * Enter [2] to request Blood Donors
@@ -31,7 +31,7 @@ def blood_status_main():
         """)
 
         choice = int(input(">   "))
-        if choice not in Configuration.blood_status_number_of_choices:
+        if choice not in Configuration.blood_section_number_of_choices:
             print("----------------")
             print("Please enter a valid choice!")
             print("----------------")
