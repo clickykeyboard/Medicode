@@ -1,68 +1,74 @@
 class Patient:
-    def __init__(self, first_name, last_name, age,
-                 gender, email, blood_group, city, address, disability, marital_status):
-
-        self.first_name = first_name
-        self.last_name = last_name
-        self.age = age
-        self.gender = gender
-        self.email = email
-        self.blood_group = blood_group
-        self.city = city
-        self.address = address
-        self.disability = disability
+    def __init__(self, patient_name, patient_age, patient_date_of_birth,
+                 patient_gender, patient_contact, patient_location, patient_cnic, patient_pin, patient_blood_group,
+                 marital_status):
+        self.patient_name = patient_name
+        self.patient_age = patient_age
+        self.patient_date_of_birth = patient_date_of_birth
+        self.patient_gender = patient_gender
+        self.patient_contact = patient_contact
+        self.patient_location = patient_location
+        self.patient_cnic = patient_cnic
+        self.patient_pin = patient_pin
+        self.patient_blood_group = patient_blood_group
         self.marital_status = marital_status
 
-    def get_first_name(self):
-        return self.first_name
+    def get_patient_name(self):
+        return self.patient_name
 
-    def get_last_name(self):
-        return self.age
+    def get_patient_age(self):
+        return self.patient_age
 
-    def get_gender(self):
-        return self.gender
+    def get_patient_date_of_birth(self):
+        return self.patient_date_of_birth
 
-    def get_email(self):
-        return self.email
+    def get_patient_gender(self):
+        return self.patient_gender
 
-    def get_blood_group(self):
-        return self.blood_group
+    def get_patient_contact(self):
+        return self.patient_contact
 
-    def get_city(self):
-        return self.city
+    def get_patient_location(self):
+        return self.patient_location
 
-    def get_address(self):
-        return self.address
+    def get_patient_cnic(self):
+        return self.patient_cnic
 
-    def get_disability(self):
-        return self.disability
+    def get_patient_pin(self):
+        return self.patient_pin
+
+    def get_patient_blood_group(self):
+        return self.patient_blood_group
 
     def get_marital_status(self):
         return self.marital_status
 
-    def set_first_name(self, new_first_name):
-        self.first_name = new_first_name
+    def set_patient_name(self, new_patient_name):
+        self.patient_name = new_patient_name
 
-    def set_last_name(self, new_last_name):
-        self.last_name = new_last_name
+    def set_patient_age(self, new_patient_age):
+        self.patient_age = new_patient_age
 
-    def set_gender(self, new_gender):
-        self.gender = new_gender
+    def set_patient_date_of_birth(self, new_patient_date_of_birth):
+        self.patient_date_of_birth = new_patient_date_of_birth
 
-    def set_email(self, new_email):
-        self.email = new_email
+    def set_patient_gender(self, new_patient_gender):
+        self.patient_gender = new_patient_gender
+
+    def set_patient_contact(self, new_patient_contact):
+        self.patient_contact = new_patient_contact
+
+    def set_patient_location(self, new_patient_location):
+        self.patient_location = new_patient_location
+
+    def set_patient_cnic(self, new_patient_cnic):
+        self.patient_cnic = new_patient_cnic
+
+    def set_patient_pin(self, new_patient_pin):
+        self.patient_pin = new_patient_pin
 
     def set_blood_group(self, new_blood_group):
         self.blood_group = new_blood_group
-
-    def set_city(self, new_city):
-        self.city = new_city
-
-    def set_address(self, new_address):
-        self.address = new_address
-
-    def set_disability(self, new_disability):
-        self.disability = new_disability
 
     def set_marital_status(self, new_marital_status):
         self.marital_status = new_marital_status
