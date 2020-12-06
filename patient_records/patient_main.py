@@ -16,7 +16,7 @@ def patient_main():
 
         choice = int(input(">   "))
 
-        if choice not in Configuration.medical_main_number_of_choices:
+        if choice not in Configuration.patient_main_number_of_choices:
             print("----------------")
             print("Please enter a valid choice!")
             print("----------------")
