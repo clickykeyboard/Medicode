@@ -2,7 +2,7 @@
 from config import Configuration
 
 # menu files
-from medical_records.medical_main import medical_main
+from medical_records.patient_main import patient_main
 from health_status.health_status import health_main
 from emergency.emergency import emergency_main
 from blood_status.blood_status import blood_status_main
@@ -13,14 +13,14 @@ while True:
     print("""
     Welcome to Medicode!
     --------------------
-    * Enter [1] for Medical Records Section
-    * Enter [2] for Health Section
-    * Enter [3] for COVID-19 Section
-    * Enter [4] for Blood Section
-    * Enter [5] for Emergency Section
-    * Enter [6] for First Aid Section
-    * Enter [7] for Schedule Section
-    * Enter [8] to exit
+    * Enter [1] for Patient History
+    * Enter [2] for Medical History / Records
+    * Enter [3] for Blood Section
+    * Enter [4] for Scheduling an Appointment
+    * Enter [5] for COVID-19 Section
+    * Enter [6] for Emergency
+
+    * Enter [7] to exit
     --------------------
     """)
 
@@ -33,37 +33,33 @@ while True:
 
     else:
         if choice == 1:
-            print("Entering medical records..")
+            print("Entering patient section..")
             print("------------------------")
-            medical_main()
+            patient_main()
 
         elif choice == 2:
-            print("Entering health section..")
+            print("Entering medical history section..")
             print("------------------------")
             health_main()
 
         elif choice == 3:
-            print("Entering covid section..")
+            print("Entering blood section..")
             print("------------------------")
 
         elif choice == 4:
-            print("Entering blood section..")
+            print("Entering schedule sction..")
             print("------------------------")
             blood_status_main()
 
         elif choice == 5:
-            print("Entering emergency section..")
+            print("Entering COVID section..")
             print("------------------------")
             emergency_main()
 
         elif choice == 6:
-            print("Entering first aid section..")
+            print("Entering emergency section..")
             print("------------------------")
 
         elif choice == 7:
-            print("Entering schedule section..")
-            print("------------------------")
-
-        elif choice == 8:
             print("Exiting Medicode...")
             exit()
