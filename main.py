@@ -1,10 +1,10 @@
 # configuration settings
-from blood_status.blood_status import blood_status_main
 from config import Configuration
+from blood_status.blood_status import blood_status_main
 from emergency.emergency import emergency_main
 from health_status.health_status import health_main
 # menu files
-from medical_records.patient_main import patient_main
+from patient_records.patient_main import patient_main
 
 # Entry point
 
@@ -13,10 +13,10 @@ while True:
     print("""
     Welcome to Medicode!
     --------------------
-    * Enter [1] for Patient History
+    * Enter [1] for Patient Information
     * Enter [2] for Medical History / Records
     * Enter [3] for Blood Section
-    * Enter [4] for Scheduling an Appointment
+    * Enter [4] for Schedule an Appointment
     * Enter [5] for COVID-19 Section
     * Enter [6] for Emergency
 
