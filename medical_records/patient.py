@@ -1,6 +1,7 @@
 class Patient:
     def __init__(self, patient_name, patient_age, patient_date_of_birth,
-                 patient_gender, patient_contact, patient_location, patient_cnic, patient_pin, patient_blood_group,
+                 patient_gender, patient_contact, patient_location, patient_cnic,
+                 patient_pin, patient_blood_group,
                  marital_status):
         self.patient_name = patient_name
         self.patient_age = patient_age
