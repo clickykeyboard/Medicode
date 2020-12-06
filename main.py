@@ -1,11 +1,11 @@
 # configuration settings
+from blood_status.blood_status import blood_status_main
 from config import Configuration
-
+from emergency.emergency import emergency_main
+from health_status.health_status import health_main
 # menu files
 from medical_records.patient_main import patient_main
-from health_status.health_status import health_main
-from emergency.emergency import emergency_main
-from blood_status.blood_status import blood_status_main
+
 # Entry point
 
 while True:
