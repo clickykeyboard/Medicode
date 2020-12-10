@@ -5,6 +5,7 @@ from emergency.emergency import emergency_main
 from patient_records.patient_main import patient_main
 from medical_history.medical_history import medical_main
 from blood_status.blood_status import blood_section_main
+from schedule.schedule import schedule_main
 
 # Entry point
 
@@ -51,7 +52,7 @@ while True:
         elif choice == 4:
             print("Entering schedule sction..")
             print("------------------------")
-            blood_status_main()
+            schedule_main()
 
         elif choice == 5:
             print("Entering COVID section..")
@@ -65,3 +66,4 @@ while True:
         elif choice == 7:
             print("Exiting Medicode...")
             exit()
+
