@@ -1,5 +1,7 @@
 import random
 
+from patient_records.patient import Patient
+
 
 class Configuration:
 
@@ -11,10 +13,6 @@ class Configuration:
     covid_19_number_of_choices = [1, 2, ]
     emergency_number_of_choices = [1, 2]
 
-    active_patient = {
-
-    }
-
     def make_dummy_patient():
 
         random_seven_digit = random.randint(1000000, 9999999)
@@ -23,6 +21,7 @@ class Configuration:
         month = random.randint(1, 12)
         patient_pin = random.randint(0000, 9999)
         patient_contact = f"0{random.randint(300, 355)}-{random_seven_digit}"
+        marital_status = ["M", "S"]
 
         patient_gender = ["Male", "Female"]
 
@@ -60,12 +59,25 @@ class Configuration:
             "patient_cnic": f"35202-{random_seven_digit}-{random.randint(0, 9)}",
             "patient_pin": patient_pin,
             "patient_blood_group": random.choice(patient_blood_groups),
+            "marital_status": random.choice(marital_status),
             "records": [],
             "appointments": []
-
         }
 
         return patient_dummy_data
 
 
-print(Configuration.make_dummy_patient())
+random_patient = Configuration.make_dummy_patient()
+
+patient_object = Patient(
+    random_patient["patient_name"],
+    random_patient["patient_age"],
+    random_patient["patient_date_of_birth"],
+    random_patient["patient_gender"],
+    random_patient["patient_contact"],
+    random_patient["patient_location"],
+    random_patient["patient_cnic"],
+    random_patient["patient_pin"],
+    random_patient["patient_blood_group"],
+    random_patient["marital_status"]
+)
