@@ -28,8 +28,7 @@ class Configuration:
         patient_location = [
             "Lahore", "Islamabad", "Karachi",
             "Faisalabad", "Multan", "Gujranwala",
-            "Okara", "Quetta", "Peshawar"
-            "Khyber Pakhtunkhwa"]
+            "Okara", "Quetta", "Peshawar"]
 
         patient_blood_groups = [
             "O+", "O-",
