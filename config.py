@@ -13,6 +13,27 @@ class Configuration:
     covid_19_number_of_choices = [1, 2, ]
     emergency_number_of_choices = [1, 2]
 
+    def make_dummy_patient_record(patient):
+        current_year = 2020
+
+        record_dates = []
+        history = {}
+
+        for _ in range(3):
+            day = random.randint(1, 30)
+            month = random.randint(1, 12)
+
+            record_dates.append(
+                f"""{day}/{month}/{random.randint(2020 - patient["patient_age"], current_year)}"""
+            )
+
+        for record_date in range(3):
+
+            history[record_dates[record_date]
+                    ] = "Something happened on some day and he died"
+
+        return history
+
     def make_dummy_patient():
 
         random_seven_digit = random.randint(1000000, 9999999)
@@ -68,7 +89,7 @@ class Configuration:
 
 random_patient = Configuration.make_dummy_patient()
 
-print(random_patient)
+print(Configuration.make_dummy_patient_record(random_patient))
 
 patient = Patient(
     random_patient["patient_name"],
