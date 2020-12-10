@@ -21,7 +21,7 @@ class Configuration:
         month = random.randint(1, 12)
         patient_pin = random.randint(0000, 9999)
         patient_contact = f"0{random.randint(300, 355)}-{random_seven_digit}"
-        marital_status = ["M", "S"]
+        marital_status = ["Married", "Single"]
 
         patient_gender = ["Male", "Female"]
 
@@ -69,7 +69,7 @@ class Configuration:
 
 random_patient = Configuration.make_dummy_patient()
 
-patient_object = Patient(
+patient = Patient(
     random_patient["patient_name"],
     random_patient["patient_age"],
     random_patient["patient_date_of_birth"],
