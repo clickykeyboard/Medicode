@@ -3,46 +3,46 @@ class Patient:
                  patient_gender, patient_contact, patient_location, patient_cnic,
                  patient_pin, patient_blood_group,
                  marital_status):
-        self.patient_name = patient_name
-        self.patient_age = patient_age
-        self.patient_date_of_birth = patient_date_of_birth
-        self.patient_gender = patient_gender
-        self.patient_contact = patient_contact
-        self.patient_location = patient_location
-        self.patient_cnic = patient_cnic
-        self.patient_pin = patient_pin
-        self.patient_blood_group = patient_blood_group
-        self.marital_status = marital_status
+        self.__patient_name = patient_name
+        self.__patient_age = patient_age
+        self.__patient_date_of_birth = patient_date_of_birth
+        self.__patient_gender = patient_gender
+        self.__patient_contact = patient_contact
+        self.__patient_location = patient_location
+        self.__patient_cnic = patient_cnic
+        self.__patient_pin = patient_pin
+        self.__patient_blood_group = patient_blood_group
+        self.__marital_status = marital_status
 
     def get_patient_name(self):
-        return self.patient_name
+        return self.__patient_name
 
     def get_patient_age(self):
-        return self.patient_age
+        return self.__patient_age
 
     def get_patient_date_of_birth(self):
-        return self.patient_date_of_birth
+        return self.__patient_date_of_birth
 
     def get_patient_gender(self):
-        return self.patient_gender
+        return self.__patient_gender
 
     def get_patient_contact(self):
-        return self.patient_contact
+        return self.__patient_contact
 
     def get_patient_location(self):
-        return self.patient_location
+        return self.__patient_location
 
     def get_patient_cnic(self):
-        return self.patient_cnic
+        return self.__patient_cnic
 
     def get_patient_pin(self):
-        return self.patient_pin
+        return self.__patient_pin
 
     def get_patient_blood_group(self):
-        return self.patient_blood_group
+        return self.__patient_blood_group
 
     def get_marital_status(self):
-        return self.marital_status
+        return self.__marital_status
 
     def set_patient_name(self, new_patient_name):
         self.patient_name = new_patient_name
