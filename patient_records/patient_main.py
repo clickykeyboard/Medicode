@@ -24,7 +24,7 @@ def patient_main():
         else:
             if choice == 1:
                 print(f"""
-        -----------------------------------
+        ------------------------------------
         Name: {patient.get_patient_name()}
         Gender: {patient.get_patient_gender()}
         Age: {patient.get_patient_age()}
@@ -35,7 +35,7 @@ def patient_main():
         CNIC: {patient.get_patient_cnic()}
         PIN: {patient.get_patient_pin()}
         Marital Status: {patient.get_marital_status()}
-        -----------------------------------
+        ------------------------------------
         """)
 
 
