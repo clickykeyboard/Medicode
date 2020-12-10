@@ -59,7 +59,7 @@ class Configuration:
             "patient_cnic": f"35202-{random_seven_digit}-{random.randint(0, 9)}",
             "patient_pin": patient_pin,
             "patient_blood_group": random.choice(patient_blood_groups),
-            "marital_status": random.choice(marital_status),
+            "marital_status": random.choice(marital_status) if age > 18 else "Single",
             "records": [],
             "appointments": []
         }
@@ -68,6 +68,8 @@ class Configuration:
 
 
 random_patient = Configuration.make_dummy_patient()
+
+print(random_patient)
 
 patient = Patient(
     random_patient["patient_name"],
