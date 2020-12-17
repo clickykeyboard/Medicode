@@ -42,6 +42,7 @@ class Configuration:
 
             history[record_dates[record_date]] = random.choice(diagnosis)
 
+
         return history
 
     @staticmethod
