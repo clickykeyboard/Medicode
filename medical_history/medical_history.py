@@ -19,8 +19,13 @@ def medical_main():
 
         else:
             if choice == 1:
-                print(patient.get_patient_records())
+                patient_medical_records: dict = patient.get_patient_records()
+                for date, diagnosis in patient_medical_records.items():
+                    print(date)
+                    print(diagnosis)
                 print("Choice 1")
+
+
 
             elif choice == 2:
                 print("Going back...")
