@@ -1,4 +1,4 @@
-from config import Configuration
+from config import Configuration, patient
 
 
 def medical_main():
@@ -19,6 +19,7 @@ def medical_main():
 
         else:
             if choice == 1:
+                print(patient.get_patient_records())
                 print("Choice 1")
 
             elif choice == 2:
