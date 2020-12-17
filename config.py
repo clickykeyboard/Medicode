@@ -10,9 +10,10 @@ class Configuration:
     medical_history_number_of_choices = [1, 2]
     blood_section_number_of_choices = [1, 2, 3]
     schedule_appointment_number_of_choices = [1, 2]
-    covid_19_number_of_choices = [1, 2, ]
+    covid_19_number_of_choices = [1, 2]
     emergency_number_of_choices = [1, 2]
 
+    @staticmethod
     def make_dummy_patient_record(patient):
         current_year = 2020
 
@@ -34,6 +35,7 @@ class Configuration:
 
         return history
 
+    @staticmethod
     def make_dummy_patient():
 
         random_seven_digit = random.randint(1000000, 9999999)
