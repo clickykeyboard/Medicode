@@ -20,6 +20,16 @@ class Configuration:
         record_dates = []
         history = {}
 
+        pronoun = "He" if patient["patient_gender"] == "Male" else "She"
+
+        diagnosis = [
+            f"Patient has a fever of 103 F. {pronoun} is listless, irritable and vomits repeatedly. {pronoun} is showing signs of mental confusion. Diagnosis have shown that patient has a malignant tumor. Immediate Radiation Therapy has been suggested.",
+            f"Patient has a case of Diarrhea. Patient is having headache and a rapid heart rate. However, it is nothing critical and {pronoun} has been given Loperamide for a weeks use.",
+            f"Patient has pressure in their back abdomen. Tests have shown that {pronoun} has Urinary Tract Infection. Advance tests have shown that they have Cystitis.  Paracetamol has been prescribed.",
+            f"Patient had a brutal car accident and was immediately shifted to the emergency room for surgery. After a successful surgery, {pronoun} is out of critical situation but will not wake up for a week at minimum.",
+            f"Patient has eye irritation due to digital eye strain. {pronoun} has been prescribed eye drops."
+        ]
+
         for _ in range(3):
             day = random.randint(1, 30)
             month = random.randint(1, 12)
@@ -30,8 +40,7 @@ class Configuration:
 
         for record_date in range(3):
 
-            history[record_dates[record_date]
-                    ] = "Something happened on some day and he died"
+            history[record_dates[record_date]] = random.choice(diagnosis)
 
         return history
 
@@ -81,17 +90,13 @@ class Configuration:
             "patient_cnic": f"35202-{random_seven_digit}-{random.randint(0, 9)}",
             "patient_pin": patient_pin,
             "patient_blood_group": random.choice(patient_blood_groups),
-            "marital_status": random.choice(marital_status) if age > 18 else "Single",
-            "records": [],
-            "appointments": []
+            "marital_status": random.choice(marital_status) if age > 18 else "Single"
         }
 
         return patient_dummy_data
 
 
 random_patient = Configuration.make_dummy_patient()
-
-print(Configuration.make_dummy_patient_record(random_patient))
 
 patient = Patient(
     random_patient["patient_name"],
@@ -104,4 +109,8 @@ patient = Patient(
     random_patient["patient_pin"],
     random_patient["patient_blood_group"],
     random_patient["marital_status"]
+)
+
+patient.set_patient_records(
+    Configuration.make_dummy_patient_record(random_patient)
 )
