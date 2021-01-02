@@ -24,9 +24,9 @@ class Configuration:
 
         diagnosis = [
             f"Patient has a fever of 103 F. {pronoun} is listless, irritable and vomits repeatedly. {pronoun} is showing signs of mental confusion. Diagnosis have shown that patient has a malignant tumor. Immediate Radiation Therapy has been suggested.",
-            f"Patient has a case of Diarrhea. Patient is having headache and a rapid heart rate. However, it is nothing critical and {pronoun} has been given Loperamide for a weeks use.",
-            f"Patient has pressure in their back abdomen. Tests have shown that {pronoun} has Urinary Tract Infection. Advance tests have shown that they have Cystitis.  Paracetamol has been prescribed.",
-            f"Patient had a brutal car accident and was immediately shifted to the emergency room for surgery. After a successful surgery, {pronoun} is out of critical situation but will not wake up for a week at minimum.",
+            f"Patient has a case of Diarrhea. Patient is having headache and a rapid heart rate. However, it is nothing critical and {pronoun.lower()} has been given Loperamide for a weeks use.",
+            f"Patient has pressure in their back abdomen. Tests have shown that {pronoun.lower()} has Urinary Tract Infection. Advance tests have shown that they have Cystitis.  Paracetamol has been prescribed.",
+            f"Patient had a brutal car accident and was immediately shifted to the emergency room for surgery. After a successful surgery, {pronoun.lower()} is out of critical situation but will not wake up for a week at minimum.",
             f"Patient has eye irritation due to digital eye strain. {pronoun} has been prescribed eye drops."
         ]
 
