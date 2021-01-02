@@ -30,7 +30,7 @@ def emergency_main():
         """)
 
         choice = int(input(">   "))
-        if choice not in Configuration.emergency_status_number_of_choices:
+        if choice not in Configuration.emergency_number_of_choices:
             print(f"{Configuration.small_dashes}")
             print("Please enter a valid choice!")
             print(f"{Configuration.small_dashes}")
