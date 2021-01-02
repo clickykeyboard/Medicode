@@ -5,6 +5,10 @@ from patient_records.patient import Patient
 
 class Configuration:
 
+    small_dashes = f"{ '-' * 20 }"
+    medium_dashes = f"{ '-' * 30 }"
+    long_dashes = f"{ '-' * 40 }"
+
     main_number_of_choices = [1, 2, 3, 4, 5, 6, 7]
     patient_main_number_of_choices = [1, 2]
     medical_history_number_of_choices = [1, 2]

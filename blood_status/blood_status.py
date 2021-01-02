@@ -21,20 +21,20 @@ class Blood_Status:
 
 def blood_section_main():
     while True:
-        print(""" 
+        print(f""" 
         Welcome to the Blood Section Menu
-        ----------------------
+        {Configuration.medium_dashes}
         * Enter [1] to check for Blood Acceptors
         * Enter [2] to request Blood Donors
         * Enter [3] to go back
-        ----------------------
+        {Configuration.medium_dashes}
         """)
 
         choice = int(input(">   "))
         if choice not in Configuration.blood_section_number_of_choices:
-            print("----------------")
+            print(f"{Configuration.small_dashes}")
             print("Please enter a valid choice!")
-            print("----------------")
+            print(f"{Configuration.small_dashes}")
 
         else:
             if choice == 1:
@@ -45,5 +45,5 @@ def blood_section_main():
 
             elif choice == 3:
                 print("Going back...")
-                print("------------------------")
+                print(f"{Configuration.medium_dashes}")
                 break

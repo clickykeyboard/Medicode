@@ -11,9 +11,9 @@ from schedule.schedule import schedule_main
 
 while True:
 
-    print("""
+    print(f"""
     Welcome to Medicode!
-    --------------------
+    { Configuration.small_dashes }
     * Enter [1] for Patient Information
     * Enter [2] for Medical History / Records
     * Enter [3] for Blood Section
@@ -22,48 +22,46 @@ while True:
     * Enter [6] for Emergency
 
     * Enter [7] to exit
-    --------------------
+    { Configuration.small_dashes }
     """)
 
     choice = int(input(">   "))
 
     if choice not in Configuration.main_number_of_choices:
-        print("------------------------")
+        print(f"{ Configuration.long_dashes }")
         print("Please enter a valid choice!")
-        print("------------------------")
-
+        print(f"{ Configuration.long_dashes }")
 
     else:
         if choice == 1:
             print("Entering patient section..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
             patient_main()
 
         elif choice == 2:
             print("Entering medical history section..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
             medical_main()
 
         elif choice == 3:
             print("Entering blood section..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
             blood_section_main()
 
         elif choice == 4:
             print("Entering schedule sction..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
             schedule_main()
 
         elif choice == 5:
             print("Entering COVID section..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
             emergency_main()
 
         elif choice == 6:
             print("Entering emergency section..")
-            print("------------------------")
+            print(f"{ Configuration.long_dashes }")
 
         elif choice == 7:
             print("Exiting Medicode...")
             exit()
-

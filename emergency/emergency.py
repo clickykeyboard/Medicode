@@ -21,19 +21,19 @@ class Emergency:
 
 def emergency_main():
     while True:
-        print(""" 
+        print(f""" 
         Welcome to the Emergency Status Menu
-        ----------------------
+        {Configuration.medium_dashes}
         * Enter [1] to check for Emergency Status
         * Enter [2] to go back
-        ----------------------
+        {Configuration.medium_dashes}
         """)
 
         choice = int(input(">   "))
         if choice not in Configuration.emergency_status_number_of_choices:
-            print("----------------")
+            print(f"{Configuration.small_dashes}")
             print("Please enter a valid choice!")
-            print("----------------")
+            print(f"{Configuration.small_dashes}")
 
         else:
             if choice == 1:
@@ -41,5 +41,5 @@ def emergency_main():
 
             elif choice == 2:
                 print("Going back...")
-                print("------------------------")
+                print(f"{Configuration.long_dashes}")
                 break
