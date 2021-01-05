@@ -76,7 +76,7 @@ class Configuration:
 
         patient_names = [
             "Alif Bay", "Pay Tay",
-            "Say Ye", "Jeem Chay", "Hay Khay"
+            "Say Ye", "Jeem Chay", "Hay Khay",
             "Daal Daal", "Zuad Ray",
             "Aray Zay", "Say Seen",
             "Sheen Suad", "Duad Toye",
