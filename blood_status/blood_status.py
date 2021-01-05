@@ -52,7 +52,6 @@ def blood_section_main():
 
 
             elif choice == 2:
-                print("Choice 2")
                 print("Your request has been sent!")
                 print("Please wait a while.")
                 print(f"{Configuration.long_dashes}")
