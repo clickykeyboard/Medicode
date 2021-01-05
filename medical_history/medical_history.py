@@ -23,7 +23,8 @@ def medical_main():
                 for date, diagnosis in patient_medical_records.items():
                     print(date)
                     print(diagnosis)
-                print("Choice 1")
+                    print(f"{Configuration.small_dashes}")
+
 
 
 
