@@ -42,9 +42,9 @@ def schedule_main():
                 appointment_choice = int(input("> "))
                 print(f"{Configuration.small_dashes}")
                 print(
-                    f"""You have scheduled an appointment with {available_appointments[appointment_choice]["doctor_name"]}""")
+                    f"""You have scheduled an appointment with {available_appointments[appointment_choice - 1]["doctor_name"]}""")
                 print(
-                    f"""The following are your timings: {available_appointments[appointment_choice]["timing"]}""")
+                    f"""The following are your timings: {available_appointments[appointment_choice - 1]["timing"]}""")
                 print(f"{Configuration.small_dashes}")
                 input("Enter anything to continue...")
 
