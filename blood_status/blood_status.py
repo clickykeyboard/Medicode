@@ -38,7 +38,6 @@ def blood_section_main():
 
         else:
             if choice == 1:
-                print("Choice 1")
                 for _ in range(5):
                     patient = Configuration.make_dummy_patient()
                     print(patient["patient_name"], "is requesting blood.")
