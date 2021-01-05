@@ -19,6 +19,7 @@ def schedule_main():
 
         else:
             if choice == 1:
+                print(Configuration.make_appointments())
                 print("Choice 1")
 
             elif choice == 2:

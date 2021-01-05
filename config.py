@@ -1,4 +1,6 @@
+import math
 import random
+from datetime import datetime
 
 from patient_records.patient import Patient
 
@@ -45,7 +47,6 @@ class Configuration:
         for record_date in range(3):
 
             history[record_dates[record_date]] = random.choice(diagnosis)
-
 
         return history
 
@@ -99,6 +100,28 @@ class Configuration:
         }
 
         return patient_dummy_data
+
+    @staticmethod
+    def make_appointments():
+        date_time_object = datetime.now()
+        date_object = date_time_object
+        days = ["Monday", "Tuesday", "Wednesday"]
+
+        specialization = ["Eye Surgeon", "ENT", "Heart Specialist"]
+        appointments = []
+
+        for i in range(3):
+            hour = random.randint(9, 14)
+            minutes = random.randint(1, 59)
+            minutes_string = str(minutes)
+            doctor_name = Configuration.make_dummy_patient()["patient_name"]
+            appointments.append({
+                "doctor_name": doctor_name,
+                "specialization": random.choice(specialization),
+                "timing": f"""{hour - 12 if hour > 12 else hour}:{"0" + minutes_string if minutes < 10 else "" + minutes_string} {"PM" if hour > 11 else "AM"}, {days[i]}"""
+            })
+
+        return appointments
 
 
 random_patient = Configuration.make_dummy_patient()
