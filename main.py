@@ -49,7 +49,7 @@ while True:
             blood_section_main()
 
         elif choice == 4:
-            print("Entering schedule sction..")
+            print("Entering schedule section..")
             print(f"{ Configuration.long_dashes }")
             schedule_main()
 
