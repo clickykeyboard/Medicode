@@ -1,30 +1,12 @@
 from config import Configuration
 
 
-class Emergency:
-    def __init__(self, emergency_history, room_number):
-        self.emergency_history = emergency_history
-        self.room_number = room_number
-
-    def get_emergency_history(self):
-        return self.emergency_history
-
-    def get_room_number(self):
-        return self.room_number
-
-    def set_emergency_history(self, new_emergency_history):
-        self.emergency_history = new_emergency_history
-
-    def set_room_number(self, new_room_number):
-        self.room_number = new_room_number
-
-
 def emergency_main():
     while True:
         print(f""" 
         Welcome to the Emergency Status Menu
         {Configuration.medium_dashes}
-        * Enter [1] to check for Emergency Status
+        * Enter [1] to request an ambulance
         * Enter [2] to go back
         {Configuration.medium_dashes}
         """)
@@ -37,7 +19,15 @@ def emergency_main():
 
         else:
             if choice == 1:
-                print("Choice 1")
+                for _ in range(1):
+                    print("Request an ambulance.")
+                    print(f"{Configuration.long_dashes}")
+                    print("Please wait...")
+                    print(f"{Configuration.long_dashes}")
+                    print("An ambulance has been dispatched to your address and will arrive shortly.")
+                    print(f"{Configuration.long_dashes}")
+
+
 
             elif choice == 2:
                 print("Going back...")
