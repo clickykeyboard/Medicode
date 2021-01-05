@@ -1,4 +1,4 @@
-from config import Configuration
+from config import Configuration, patient
 
 
 class Blood_Status:
@@ -39,9 +39,29 @@ def blood_section_main():
         else:
             if choice == 1:
                 print("Choice 1")
+                for _ in range(5):
+                    patient = Configuration.make_dummy_patient()
+                    print(patient["patient_name"], "is requesting blood.")
+                    print("Their blood group is ", patient["patient_blood_group"])
+                    print("Their age is ", patient["patient_age"])
+                    print(f"{Configuration.long_dashes}")
+
+
+
+
+
 
             elif choice == 2:
                 print("Choice 2")
+                print("Your request has been sent!")
+                print("Please wait a while.")
+                print(f"{Configuration.long_dashes}")
+                for _ in range(5):
+                    patient = Configuration.make_dummy_patient()
+                    print(patient["patient_name"], "is willing to donate blood.")
+                    print("Their blood group is ", patient["patient_blood_group"])
+                    print("Their age is ", patient["patient_age"])
+                    print(f"{Configuration.long_dashes}")
 
             elif choice == 3:
                 print("Going back...")
