@@ -13,7 +13,7 @@ def covid_main():
     
         Welcome to Patient Section
         {Configuration.medium_dashes}
-        * Enter [1] for COVID-19 Informations
+        * Enter [1] for COVID-19 Information
         * Enter [2] to go back 
         {Configuration.medium_dashes}
         """)
