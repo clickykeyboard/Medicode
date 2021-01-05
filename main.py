@@ -5,6 +5,7 @@ from emergency.emergency import emergency_main
 from patient_records.patient_main import patient_main
 from medical_history.medical_history import medical_main
 from blood_status.blood_status import blood_section_main
+from covid.covid import covid_main
 from schedule.schedule import schedule_main
 
 # Entry point
@@ -56,11 +57,11 @@ while True:
         elif choice == 5:
             print("Entering COVID section..")
             print(f"{ Configuration.long_dashes }")
-            emergency_main()
-
+            covid_main()
         elif choice == 6:
             print("Entering emergency section..")
             print(f"{ Configuration.long_dashes }")
+            emergency_main()
 
         elif choice == 7:
             print("Exiting Medicode...")
